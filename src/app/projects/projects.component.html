@@ -7,16 +7,19 @@
   </li>
 </ul>
 
-<div *ngIf="selectedProject">
+<div *ngIf="selectedProject" class="selectedProject">
 
-  <h2>{{ selectedProject.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{selectedProject.id}}</div>
+  <h2>{{ selectedProject.name}} Details</h2>
+  <div><span><span class="label">project:</span> </span>{{selectedProject.id}}</div>
   <div>
-    <label>name:
-      <input [(ngModel)]="selectedProject.name" placeholder="name">
+    <label><span class="label">name:</span>
+      <span>{{selectedProject.name}}</span><br>
     </label>
-    <label>description:
-      <input [(ngModel)]="selectedProject.description" placeholder="description">
+    <label><span class="label">url:</span>
+      <span><a href={{selectedProject.url}}>{{selectedProject.url}}</a></span>
+    </label><br>
+    <label><span class="label">details:</span>
+      <span>{{selectedProject.details}}</span>
     </label>
   </div>
 
