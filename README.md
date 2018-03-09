@@ -1,5 +1,5 @@
 # Jessie Dowding Portfolio
-
+ng serve --host $IP --port $PORT --disable-host-check
 Eventually will set up: <br>
 https://alligator.io/angular/deploying-angular-app-github-pages/
 
